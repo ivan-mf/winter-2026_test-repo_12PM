@@ -1,0 +1,16 @@
+---
+title: "workshop-test-repo-12PM"
+author: "Iván Morales"
+date: "2026-02-20"
+format: html
+editor: visual
+---
+
+## set up chunck 
+```{r}
+library(tidyverse)
+library(lterdatasampler)
+
+data(pie_crab)
+```
+
