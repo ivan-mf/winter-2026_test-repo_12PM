@@ -10,6 +10,7 @@ editor: visual
 ```{r}
 library(tidyverse)
 library(lterdatasampler)
+library(viridis)
 
 data(pie_crab)
 ```
@@ -17,6 +18,12 @@ data(pie_crab)
 #New section: exploratory visualization 
 
 ```{r}
-ggplot(data = pie_crab, aes(x= latitude, y = size))
+ggplot(data = pie_crab, aes(x= latitude, y = size, color = site)) + 
+  geom_point() + 
+  theme_minimal() + 
+  scale_color_viridis(discrete = TRUE, option = "plasma")
 ```
+
+
+
 
