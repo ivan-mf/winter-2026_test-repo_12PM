@@ -14,3 +14,9 @@ library(lterdatasampler)
 data(pie_crab)
 ```
 
+#New section: exploratory visualization 
+
+```{r}
+ggplot(data = pie_crab, aes(x= latitude, y = size))
+```
+
